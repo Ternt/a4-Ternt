@@ -1,0 +1,72 @@
+
+.full-height {
+  height: 100%;
+}
+
+#login-container {
+  padding: 20px;
+  width: 40rem;
+  padding: 40px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 12px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-box {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+.form-label {
+  font-size: 20px;
+}
+.form-label-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.form-input {
+  font-size: 16px;
+  margin-right: 2rem;
+  padding: 0.2rem;
+  border-radius: 4px;
+  color: var(--text-secondary-secondary);
+}
+.form-input:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.form-input:focus {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.contains-data {
+}
+#form-submission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#form-button {
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+#form-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#form-button:active {
+  background-color: var(--color-gray-500);
+}
+.form-trigger {
+  width: fit-content;
+  font-size: 14px;
+}

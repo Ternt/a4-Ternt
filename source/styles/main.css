@@ -1,0 +1,59 @@
+:root {
+    --main-bg-color: #1f1f1f;
+    --secondary-bg-color: #151515;
+    --text-primary: #efefef;
+    --text-secondary: #e6b753;
+    --text-secondary-secondary: #a0a0a0;
+    --text-secondary-highlight: #ef8700;
+    --font-size-normal: 14px;
+    --font-size-large: 16px;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    color: var(--text-primary);
+    background-color: var(--main-bg-color);
+    font-family: "Reddit Mono", serif;
+    font-optical-sizing: auto;
+    overflow: hidden;
+}
+
+#Logo {
+  z-index: 1000;
+}
+
+.navigationMenuRoot {
+  padding: 10px;
+  display: flex;
+  background-color: var(--main-bg-color);
+  justify-content: space-between;
+}
+
+.navigationMenuList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(1rem * var(--mantine-scale));
+}
+
+.NavLink {
+  font-size: calc(1.4rem * var(--mantine-scale));
+}
+
+.Button {
+  padding-top: calc(0.15rem * var(--mantine-scale));
+  padding-bottom: calc(0.15rem * var(--mantine-scale));
+  padding-left: calc(0.6rem * var(--mantine-scale));
+  padding-right: calc(0.6rem * var(--mantine-scale));
+  border: none;
+  border-radius: var(--mantine-radius-default);
+  color: var(--mantine-color-text);
+  background-color: inherit;
+}
+.Button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}

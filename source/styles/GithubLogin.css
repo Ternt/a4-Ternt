@@ -1,0 +1,11 @@
+
+.git-login-button {
+  background-color: #0f0f0f;
+  border-radius: 6px;
+}
+
+.octocat {
+  width: var(--mantine-font-size-md);
+  height: var(--mantine-font-size-md);
+  fill: var(--text-primary);
+}
