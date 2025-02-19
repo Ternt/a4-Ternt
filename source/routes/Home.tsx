@@ -1,8 +1,8 @@
 import React from 'react'
 import { Group, Container, Title, Button } from '@mantine/core'
 
+const LazyWebGLCanvas = React.lazy(() => import("../components/WebGLCanvas"));
 import { useAuth } from "../components/AuthProvider"
-import WebGLCanvas from "../components/WebGLCanvas"
 import "@/styles/Home.css"
 
 const names = [
@@ -133,7 +133,9 @@ export default function Home() {
             <Title
                 size={"3rem"}
             >{cardName}</Title>
-            <WebGLCanvas />
+            <React.Suspense>
+                <LazyWebGLCanvas />
+            </React.Suspense>
             <Group>
                 <Button
                     size={"lg"}

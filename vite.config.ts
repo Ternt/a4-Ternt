@@ -8,5 +8,18 @@ export default defineConfig({
       '@': './source',
     },
   },
-  plugins: [react()],
+  build: {
+    chunkSizeWarningLimit: 700,
+    rollupOptions: {
+      treeshake: true,
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom', '@mantine/core', '@mantine/form', '@mantine/hooks'],
+          reactThree: ['@react-three/fiber', '@react-three/drei'],
+          three: ['three'],
+        }
+      }
+    }
+  },
+  plugins: [react()]
 })
