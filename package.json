@@ -4,6 +4,7 @@
   "scripts": {
     "eslint": "eslint .",
     "serve": "nodemon ./server.cjs",
+    "prod:build": "vite build",
     "dev:build": "vite build --watch"
   },
   "dependencies": {
